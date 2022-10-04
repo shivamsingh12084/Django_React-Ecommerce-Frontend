@@ -10,9 +10,10 @@ import products from '../products'
 function ProductScreen() {
     const {id} = useParams()
 
-
+    
     const [product, setProduct] = useState([])
    
+    // Use to fetch data from backend 
     useEffect(() => {
     async function fetchProduct() {
       const { data } = await axios.get(`/api/products/${id}`)
