@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import React, { Component }  from 'react';
 
 import { Routes, Route } from "react-router-dom";
 
