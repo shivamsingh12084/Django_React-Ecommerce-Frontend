@@ -36,7 +36,8 @@ function PlaceorderScreen() {
 
     useEffect(() => {
         if(success){
-            nevigate(`order/${order._id}`)
+            nevigate(`/order/${order._id}`)
+            console.log(order._id)
             dispatch({type: ORDER_CREATE_RESET})
         }
     }, [success])
